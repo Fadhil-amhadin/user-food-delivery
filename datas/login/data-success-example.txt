@@ -1,0 +1,22 @@
+//Status Code "200"
+{
+   "payload":[
+      {
+         "userId":"119961",
+         "tokens":{
+            "accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSl...."
+         },
+         "userInfo":{
+            "personalInfo":{
+               "email":"mir@uat.com",
+               "phoneNo":"0895636823830",
+               "name":"Admiral Sultano Harly"
+            }
+         }
+      }
+   ],
+   "errors":[
+      
+   ],
+   "success":true
+}

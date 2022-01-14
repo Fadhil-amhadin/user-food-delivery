@@ -1,0 +1,15 @@
+1. the url should end with /midas/login/v1/foodDelivery/login
+2. using "POST" method with details : 
+   header = 
+	- Content-Type: application/json
+	- signature: midasfooddelivery
+
+   body =
+	{
+		"email" : "miral@uat.com",
+		"password" : "$2a$10$p8mgoUSFTFZ81qaT5O9k1ulXJJREjRy.PjPNZkhL7EGCdz7PUp9bW"
+	}
+
+4. - IF success it will show the content of "data-success-example.txt"
+   - IF failed it will show the content of "data-failed-example.txt"
+	

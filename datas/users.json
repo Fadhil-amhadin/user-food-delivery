@@ -1,0 +1,18 @@
+ [
+    {
+        "id" : 1,
+        "name" : "Bernhard Winner",
+        "email" : "admin@admin.com",
+        "phoneNo" : "085774421909",
+        "password" : "$2a$10$7n.fZuOaakqyj4CY80XXW.TWDY8Tg.jixTt.2K7cLoJGtYmrlauSG",
+        "userId" : "999999"
+    },
+    {
+        "id" : 2,
+        "name" : "Admiral Sultano Harly",
+        "email" : "miral@uat.com",
+        "phoneNo" : "0895636823830",
+        "password" : "$2a$10$p8mgoUSFTFZ81qaT5O9k1ulXJJREjRy.PjPNZkhL7EGCdz7PUp9bW",
+        "userId" : "100000"
+    }
+]

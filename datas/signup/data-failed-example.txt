@@ -1,0 +1,47 @@
+// Status code "400" when password not 8 character
+{
+   "payload":[
+      
+   ],
+   "errors":[
+      {
+         "code":"ERR1001",
+         "message":"Email Not Match The Criteria",
+         "type":"Not Match"
+      }
+   ],
+   "success":false
+}
+
+// Status code "400" when email not meet the criteria(example: there is no "@", ".com" etc)
+{
+   "payload":[
+      
+   ],
+   "errors":[
+      {
+         "code":"ERR1002",
+         "message":"Password Not Match The Criteria",
+         "type":"Not Match"
+      }
+   ],
+   "success":false
+}
+
+// Status code "400" when phoneNo not begin with "0"
+{
+   "payload":[
+      
+   ],
+   "errors":[ 
+      {
+         "code":"ERR1003",
+         "message":"Phone Number should start with 0",
+         "type":"Not Match"
+      }
+   ],
+   "success":false
+}
+
+// Status code "403" When the value of header "signature" is wrong or "signature" not added.
+<not sending any response>
