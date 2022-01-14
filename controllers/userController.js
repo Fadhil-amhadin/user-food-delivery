@@ -128,7 +128,7 @@ class UserController {
 
 			await User.update({
 				name,
-				image: `http://localhost:3001/uploads/${image}`
+				image: `http://localhost:3001/uploads/${image}` // insert url/uploads/image_url
 			},{
 				where:{
 					userId
@@ -146,30 +146,6 @@ class UserController {
 			next(err)
 		}
 	}
-	
-	// static async getUser (req, res, next) {
-	// 	try {
-	// 		console.log("hha")
-	// 		const { userId } = req.user
-	// 		const userData = await User.findOne({
-	// 			where:{
-	// 				userId
-	// 			}
-	// 		})
-	// 		// console.log(userId)
-	// 		res.status(200).json({
-	// 			payload: [{
-	// 				name: userData.name,
-	// 				image: userData.image
-	// 			}],
-	// 			errors: [],
-	// 			success: true
-	// 		})
-	// 	} catch (err) {
-	// 		console.log(err)
-	// 		next(err)
-	// 	}
-	// }
 }
 
 module.exports = UserController;
