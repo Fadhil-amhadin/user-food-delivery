@@ -21,6 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 // 		res.status(403).send("you are not allowed to view this file or page")
 // 	}
 // });
+app.use('/', (req, res, next) => {
+  res.status(200).send("you success")
+})
 
 app.use('/', routes)
 
