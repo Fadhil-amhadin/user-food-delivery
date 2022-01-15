@@ -1,11 +1,11 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgre",
-    "database": "food_delivery_microservices_users",
-    "host": "127.0.0.1",
+    "username": "fdegtpudypjtpj",
+    "password": "fbbae4abc1a3fe9c37ab109516f9cb0ae69e9da042ef9ffe56b0ca1c17d30974",
+    "database": "d5fnala0n7d7f6",
+    "host": "ec2-3-232-22-121.compute-1.amazonaws.com",
     "dialect": "postgres",
-    "port": 5433
+    "port": 5432
   },
   "test": {
     "username": "root",
