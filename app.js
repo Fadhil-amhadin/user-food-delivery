@@ -22,11 +22,11 @@ app.use(express.urlencoded({ extended: true }));
 // 	}
 // });
 app.use('/', (req, res, next) => {
-  res.status(200).send("you success")
+  res.send("you success")
 })
 
 app.use('/test', (req, res, next) => {
-  res.status(200).send("test page")
+  res.send("test page")
 })
 
 app.use('/', routes)
