@@ -25,6 +25,10 @@ app.use('/', (req, res, next) => {
   res.status(200).send("you success")
 })
 
+app.use('/test', (req, res, next) => {
+  res.status(200).send("test page")
+})
+
 app.use('/', routes)
 
 app.use('/uploads', express.static('uploads'))
