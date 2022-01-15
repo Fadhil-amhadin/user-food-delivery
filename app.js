@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', (req , res , next) => {
+app.use('/uploads', (req , res , next) => {
     const signature = req.get('signature');
     if (signature === "midasfooddelivery") {
       next();
