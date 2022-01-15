@@ -21,11 +21,11 @@ app.use(express.urlencoded({ extended: true }));
 // 		res.status(403).send("you are not allowed to view this file or page")
 // 	}
 // });
-app.use('/', (req, res, next) => {
+app.get('/', (req, res, next) => {
   res.send("you success")
 })
 
-app.use('/test', (req, res, next) => {
+app.get('/test', (req, res, next) => {
   res.send("test page")
 })
 
