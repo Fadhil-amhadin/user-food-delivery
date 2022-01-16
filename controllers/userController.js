@@ -123,11 +123,11 @@ class UserController {
 		try {
 			const { userId, personalInfo } = req.user
 			const { name } = req.body
-			// const image = req.files.image[0].filename
+			const image = req.files.image[0].filename
 
 			await User.update({
 				name,
-				// image: `https://dry-tundra-76454.herokuapp.com/uploads/${image}` // insert url/uploads/image_url
+				image: `https://dry-tundra-76454.herokuapp.com/uploads/${image}` // insert url/uploads/image_url
 			},{
 				where:{
 					userId
