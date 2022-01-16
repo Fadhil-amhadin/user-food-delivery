@@ -99,7 +99,9 @@ class UserController {
 				throw { name: "InvalidSignature" };
 			}
 		} catch (err) {
-			//res.send(err)
+			res.json({
+				err
+			})
 			next(err);
 		}
 	}
