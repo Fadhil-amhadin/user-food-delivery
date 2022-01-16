@@ -66,9 +66,6 @@ class UserController {
 					throw { name: "WrongPassword" };
 				}
 
-				testing = "ada"
-				testing = {foundUser}
-				
 				const userLogin = {
 					id: foundUser.id,
 					email: foundUser.email,
@@ -76,6 +73,9 @@ class UserController {
 					userId: foundUser.userId,
 					name: foundUser.name,
 				};
+
+				testing = "ada"
+				testing = {foundUser}
 
 				const token = signToken(userLogin);
 
