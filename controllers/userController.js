@@ -100,7 +100,9 @@ class UserController {
 			}
 		} catch (err) {
 			res.json({
-				err: err
+				email,
+				password,
+				signature: req.headers.signature
 			})
 			next(err);
 		}
