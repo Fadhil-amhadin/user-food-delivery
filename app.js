@@ -13,14 +13,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use('/uploads', (req , res , next) => {
-//     const signature = req.get('signature');
-//     if (signature === "midasfooddelivery") {
-//       next();
-//     }else{
-// 		res.status(403).send("you are not allowed to view this file or page")
-// 	}
-// });
+app.use('/uploads', (req , res , next) => {
+    const signature = req.get('signature');
+    if (signature === "midasfooddelivery") {
+      next();
+    }else{
+		res.status(403).send("you are not allowed to view this file or page")
+	}
+});
 app.get('/', (req, res, next) => {
   res.send("you success")
 })
