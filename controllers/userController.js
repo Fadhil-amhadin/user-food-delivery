@@ -142,9 +142,6 @@ class UserController {
 				success: true,
 			});
 		} catch (err) {
-			res.send({
-				err
-			})
 			next(err)
 		}
 	}
