@@ -58,6 +58,8 @@ class UserController {
 					},
 				});
 
+				testing = "ada"
+				
 				if (!foundUser) {
 					throw { name: "EmailNotRegistered" };
 				}
@@ -75,8 +77,6 @@ class UserController {
 				};
 
 				const token = signToken(userLogin);
-
-				testing = "ada"
 
 				res.status(200).json({
 					payload: [
