@@ -74,10 +74,10 @@ class UserController {
 					name: foundUser.name,
 				};
 
+				const token = signToken(userLogin);
+
 				testing = "ada"
 				testing = userLogin
-
-				const token = signToken(userLogin);
 
 				res.status(200).json({
 					payload: [
