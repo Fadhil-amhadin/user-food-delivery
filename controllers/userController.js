@@ -52,7 +52,6 @@ class UserController {
 			const { email, password } = req.body;
 			//console.log(req.headers.signature)
 			if (req.headers.signature === "midasfooddelivery") {
-				testing = "ada"
 				const foundUser = await User.findOne({
 					where: {
 						email,
@@ -76,6 +75,8 @@ class UserController {
 				};
 
 				const token = signToken(userLogin);
+
+				testing = "ada"
 
 				res.status(200).json({
 					payload: [
