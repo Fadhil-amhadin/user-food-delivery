@@ -49,7 +49,7 @@ class UserController {
 	static async login(req, res, next) {
 		try {
 			const { email, password } = req.body;
-			console.log(req.headers.signature)
+			//console.log(req.headers.signature)
 			if (req.headers.signature === "midasfooddelivery") {
 				
 				const foundUser = await User.findOne({
@@ -99,6 +99,7 @@ class UserController {
 				throw { name: "InvalidSignature" };
 			}
 		} catch (err) {
+			res.send(err)
 			next(err);
 		}
 	}
@@ -128,7 +129,7 @@ class UserController {
 
 			await User.update({
 				name,
-				image: `http://localhost:3001/uploads/${image}` // insert url/uploads/image_url
+				image: `https://dry-tundra-76454.herokuapp.com/uploads/${image}` // insert url/uploads/image_url
 			},{
 				where:{
 					userId
