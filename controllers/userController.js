@@ -47,7 +47,6 @@ class UserController {
 	}
 
 	static async login(req, res, next) {
-		let testing = ""
 		try {
 			const { email, password } = req.body;
 			//console.log(req.headers.signature)
@@ -76,9 +75,6 @@ class UserController {
 
 				const token = signToken(userLogin);
 
-				testing = "ada"
-				testing = userLogin
-
 				res.status(200).json({
 					payload: [
 						{
@@ -102,12 +98,6 @@ class UserController {
 				throw { name: "InvalidSignature" };
 			}
 		} catch (err) {
-			res.json({
-				email: req.body.email,
-				password: req.body.password,
-				signature: req.headers.signature,
-				testing: testing
-			})
 			next(err);
 		}
 	}
