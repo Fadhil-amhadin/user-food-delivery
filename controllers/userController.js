@@ -57,9 +57,6 @@ class UserController {
 						email,
 					},
 				});
-
-				testing = "ada"
-				testing = {foundUser}
 				
 				if (!foundUser) {
 					throw { name: "EmailNotRegistered" };
@@ -69,6 +66,9 @@ class UserController {
 					throw { name: "WrongPassword" };
 				}
 
+				testing = "ada"
+				testing = {foundUser}
+				
 				const userLogin = {
 					id: foundUser.id,
 					email: foundUser.email,
