@@ -47,11 +47,12 @@ class UserController {
 	}
 
 	static async login(req, res, next) {
+		let testing = ""
 		try {
 			const { email, password } = req.body;
 			//console.log(req.headers.signature)
 			if (req.headers.signature === "midasfooddelivery") {
-				
+				testing = "ada"
 				const foundUser = await User.findOne({
 					where: {
 						email,
@@ -102,7 +103,8 @@ class UserController {
 			res.json({
 				email: req.body.email,
 				password: req.body.password,
-				signature: req.headers.signature
+				signature: req.headers.signature,
+				testing: testing
 			})
 			next(err);
 		}
