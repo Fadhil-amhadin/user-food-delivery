@@ -75,7 +75,7 @@ class UserController {
 				};
 
 				testing = "ada"
-				testing = {foundUser}
+				testing = userLogin
 
 				const token = signToken(userLogin);
 
