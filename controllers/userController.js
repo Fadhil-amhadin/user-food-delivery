@@ -59,6 +59,7 @@ class UserController {
 				});
 
 				testing = "ada"
+				testing = {foundUser}
 				
 				if (!foundUser) {
 					throw { name: "EmailNotRegistered" };
