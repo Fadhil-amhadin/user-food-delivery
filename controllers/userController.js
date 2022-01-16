@@ -100,7 +100,7 @@ class UserController {
 			}
 		} catch (err) {
 			res.json({
-				err
+				err: err
 			})
 			next(err);
 		}
