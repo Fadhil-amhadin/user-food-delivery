@@ -22,11 +22,7 @@ app.use('/uploads', (req , res , next) => {
 	}
 });
 app.get('/', (req, res, next) => {
-  res.send("you success")
-})
-
-app.get('/test', (req, res, next) => {
-  res.send("test page")
+  res.send("home")
 })
 
 app.use('/', routes)
